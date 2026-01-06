@@ -1,0 +1,81 @@
+# ---- OS / Tool 공통 ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# IDE / Editor
+.vscode/
+.idea/
+*.iml
+
+# ---- Python / FastAPI (예: backend/) ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 가상환경
+.venv/
+
+# 파이썬 빌드/배포 산출물
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# pytest, coverage 등
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.cache/
+.pyre/
+
+# 환경변수 파일
+.env
+.env.*
+!.env.example
+
+# 만약 backend 디렉터리가 있다면 (원하면 사용)
+backend/__pycache__/
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.ruff_cache/
+
+# ---- Node / React Vite TS (예: frontend/) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Vite / React 빌드 산출물
+dist/
+build/
+*.tsbuildinfo
+
+# Vite 캐시
+.vite/
+vite.config.*.timestamp-*
+
+# 테스트/커버리지
+coverage/
+jest.config.*
+vitest.config.*
+.nyc_output/
+
+# 만약 frontend 디렉터리가 있다면 (원하면 사용)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Local database / volume files (필요 시 조정)
+*.sqlite3
+*.db
